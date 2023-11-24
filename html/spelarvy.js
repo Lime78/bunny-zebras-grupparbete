@@ -39,7 +39,7 @@ const minWordLength = words.filter(word => word.length >= 10);
 const theWord = document.querySelector('#the-word');
 const randomIndex = Math.floor(Math.random() * minWordLength.length);
 export const randomWord = minWordLength[randomIndex].toUpperCase();
-// const guesses = document.querySelector('#guesses')
+const guesses = document.querySelector('#guesses')
 
 function generateWord() {
 	let hiddenLetters = Array(randomWord.length).fill('_');
@@ -49,6 +49,7 @@ function generateWord() {
 	
 	document.addEventListener('keydown', (event) => {
 	  const pressedKey = event.key.toUpperCase();
+	  guesses.innerText = pressedKey
 	
 	  if (randomWord.includes(pressedKey)) {
 		randomWord.split('').forEach((char, index) => {
@@ -57,11 +58,11 @@ function generateWord() {
 		  }
 		});
 		theWord.innerText = hiddenLetters.join(' ');
-	  }
+	}
 	else (!randomWord.includes(pressedKey)) 
 	scaffold.style.opacity = '1';
-	});
-	// console.log('hej');  //tillfäligt bortaget
+});
+// console.log('hej');  //tillfäligt bortaget
 }
 
 
