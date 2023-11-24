@@ -74,7 +74,12 @@ body {
 #guesses {
 	margin-top: 0;
 	letter-spacing: 0.2em;
-	font-size: 3rem;
+	font-size: 2rem;
+}
+
+#guesses-header {
+	font-size: 2rem;
+	text-decoration: underline;
 }
 
 /* .underline {
