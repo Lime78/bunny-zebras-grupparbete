@@ -72,7 +72,9 @@ body {
 }
 
 #guesses {
-	/* visibility: hidden; */
+	margin-top: 0;
+	letter-spacing: 0.2em;
+	font-size: 3rem;
 }
 
 /* .underline {
