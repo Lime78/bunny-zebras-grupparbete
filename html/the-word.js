@@ -31,25 +31,40 @@
 // 		});
 // 		theWord.innerText = hiddenLetters.join(' ');
 // 	  }
-	
-// 	});
+ //	});
 // 	console.log('hej');
 // }
 
-
 // const playContainer = document.querySelector('.play-container')
-// const normalBtn = document.querySelector('.normal')
-// const playerInput = document.querySelector('#player-input')
-// const gamerContainer = document.querySelector('.gamer-container')
+ //const normalBtn = document.querySelector('.normalbtn')
+ 
+ //const playerInput = document.querySelector('#player-input')
 
-// normalBtn.addEventListener('click', startGame );
+ //const text = document.querySelector('text')
+// const gamerContainer = document.querySelector('.gamer-container')
+  
+//Another code for the keyboard ***************
+    
+document.addEventListener("DOMContentLoaded", function() {
+    const theWord = document.querySelector('#the-word');
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            let clickedLetter = button.textContent;
+            the
+            console.log("Button clicked:", clickedLetter);
+        });
+    });
+});
+
+   
+ 
 // const playerNameContainer = document.createElement('div');
 // playerNameContainer.className = 'page';
 // playerNameContainer.style.display = 'none';
 // gamerContainer.insertAdjacentElement('afterend', playerNameContainer);
 
 // function startGame() {
-
 //     const playerName = playerInput.value;
 //     if (playerName.trim().length < 2) {
 //         alert('Vänligen ange ditt namn innan du startar spelet. Minst två tecken.');
@@ -58,8 +73,6 @@
 //     playContainer.style.opacity = '0';
 //     playerNameContainer.innerHTML = `<p id="player-name">Spelare: ${playerName}</p>`;
 //     playerNameContainer.style.display = 'flex';
-
 // 	generateWord()
 // }
-
 

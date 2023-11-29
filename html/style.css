@@ -107,4 +107,28 @@ body {
 	padding-left: 0;
 	border: 1px solid black;
 }
+
+
+.normalbtn{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+
+ }
+
+ button {
+    margin: 10px;
+    padding:10px;
+	display: inline-block;
+    border: none;
+    background-color:rgb(244, 139, 10);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+ }
+
+ .row button:hover {
+    background-color: rgb(250, 157, 104);
+ }
 /* <-------------------------------------------------------------------------------------------> */
