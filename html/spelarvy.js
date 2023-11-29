@@ -49,8 +49,13 @@ function generateWord() {
 	
 	document.addEventListener('keydown', (event) => {
 	  const pressedKey = event.key.toUpperCase();
+<<<<<<< HEAD
 	  guesses.innerText += pressedKey 
 
+=======
+	  guesses.innerText += `${pressedKey}-`;
+	  
+>>>>>>> cfce81677eea97f3f1b1021f05737b74550b4f1b
 	
 	  if (randomWord.includes(pressedKey)) {
 		randomWord.split('').forEach((char, index) => {
